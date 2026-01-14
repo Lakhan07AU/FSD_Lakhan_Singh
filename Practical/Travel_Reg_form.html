@@ -1,75 +1,176 @@
-<html>
 <head>
-    <title>Travel Registration Form</title>
+<title>Travel Registration Form</title>
+       <style>
 
-
-    </head>
-
-    <style> 
-
+        p{
+            margin-left: 42%;
+            margin-top: 10px;
+            color : blue;
     
+        }
+        legend{
+            text-align: center;
+        }
+        button{
+            text-align: center;
+        }
+        label,input{
+            text-align: center;
+            margin-left:1%;
+            margin-bottom:1%;
+        }
+        fieldset{
+        box-shadow: 2px 2px 4px black;
+        border-radius: 2%;
+        padding-top: 10px;
+        background: linear-gradient(rgb(205, 85, 85),white, #30e020, #c4e150, rgb(85, 85, 205) );
+        }
 
-     body{ 
-     
-  text-align: center;
-       
-   }
+        body{
+            background-image: url("wp6612899-varanasi-wallpapers.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        button{
+            background:linear-gradient( white, #30e020, #c4e150 );
+            border:none;
+            border-radius: 5px;
+        }
+        button:hover{
+            background:linear-gradient(rgb(85, 85, 205), #c4e150, #30e020, white, rgb(205, 85, 85)  );
+        }
+        input{
+            background-color: beige;
+            border:none;
+            border-radius: 5px;
+        }
+        .l1{
+            padding-left : 300px;
+        }
+        .i1,.l1{
+            margin-bottom: 1%;
+            
+        }
+        .l2{
+             padding-left:300px;
+             
+        }
+        .i2{
+            width:27.34%;
+        }
+        .i2,.l2{
+            margin-bottom: 1%;
+        }
+        .l3{
+            padding-left : 300px;
+            padding-right: 43px;
+        }
+        .i3{
+            width:27.5%;
+        }
+        .i3,.l3{
+            margin-bottom: 1%;
 
-</style>
- 
+        }
+        .l4{
+            padding-left : 300px;
+            padding-right: 43px;
+        }
+        .i4{
+            width : 27.67%
+        }
+        .i4,.l4{
+            margin-bottom: 1%;
+        }
+        .l5{
+            padding-left : 300px;
+            padding-right : 51px;
+        }
+        .i5{
+            width : 4.3%;
+        }
+        .i5,.l5{
+            margin-bottom: 1%;
+        }
+        .l6{
+            padding-left : 300px;
+            padding-right :85px;
+        }
+        .i6{
+            width : 27.67%;
+        }
+        .i6,.l6{
+            margin-bottom: 1%;
+        }
+        .i7{
+            width : 27.8% 
+        }
+        .l7{
+            padding-left : 300px;
+            padding-right : 35px;
+        }
+        .i7,.l7{
+            margin-bottom: 1%;
+        }
+        .l8{
+            padding-left : 300px;
+            padding-right: 55px;
+        }
+        .i8{
+            width : 27.8%;
+        }
+        .i8,.l8{
+            margin-bottom: 1%;
+        }
 
+        .l9{
+            margin-left: 43%;
+            margin-bottom: 1%;
+        }
+        select{
+            text-align: center;
+            margin-bottom: 1%;
+            margin-left:21%;
+            padding-left:16%;
+            padding-right: 16%;
+        }
+       </style>
+    </head>
     <body>
+        <form>
+            <fieldset>
+        <legend><b>Travel Registration Form</b></legend>
+        <select > 
+            <option>-- Select --</option>
+            <option>-- Train --</option>
+            <option>-- Bus --</option>
+            <option>-- Flight --</option>
+        </select><br>
+<label class="l1">From:</label>
+<input type="text" placeholder="Enter your source" required>
+<label class="i1">To:</label>
+<input type="text" placeholder="Enter your destination" required><br>
+<label class = "l2">Date of travelling :</label>
+<input type="date"class="i2" required><br>
+<label class="l3">First Name : </label>
+<input type="text" class="i3" required><br>
+<label class="l4">Last Name : </label>
+<input type="text" class="i4" required> <br>
+<label class="l5">Gender : </label>
+<input class = "i5" type="radio"  name = "gender"  value="male" required>Male
+ <input class="i5" type="radio" name = "gender" value="female" required>Female
+ <input  class ="i5" type="radio" name = "gender" value="others" required>Others <br>
+<label class="l6" >Age : </label>
+<input type="number" class="i6" required> <br>
+<label class="l7" >Contact No. : </label>
+<input type="number" class="i7" required> <br>
+<label class="l8">Email ID : </label>
+<input type="text" class="i8"> <br>
+<button class="l9">Register IN</button>
 
-    <form>
-        
-        <fieldset>
+<p> Forgotten Password?</p>
 
-
-      
-    <legend>
-
-        <b> Travel Registration Form</b>
-
-                    
-
-
-    </legend>
-    <br><br>
-
-        <label> From:</label>
-    <input type ="text" >
-
-        <label> To: </label>
-    <input type ="text" >
-    <br> <br>
-    <label>Date of Travelling :</label>
-    <input type="date">
-    <br><br>
-    <label> First Name :</label>
-    <input type ="text" >
-    <br>  <br>
-        <label> Last Name :</label>     
-    <input type ="text" >
-    <br>  <br>
-    <label > Gender :</label>       
-    <input type="radio" name="Gender" value="male"> Male                
-
-    <input type="radio" name="Gender" value="Female"> female
-    <input type="radio"name= "Gender" value="Other"> Other
-
-    <br>  <br>   
-    <label>Age: </label>
-    <input type ="number" >
-    <br>  <br>
-    <label> Phone : </label>
-    <input type ="tel" >
-    <br>  <br>  
-    <label> Email :</label>
-    <input type ="email" >
-    <br>  <br>
-    <button>Submit</button>
     </fieldset>
-
     </form>
     </body>
-</html>
+    <html>
