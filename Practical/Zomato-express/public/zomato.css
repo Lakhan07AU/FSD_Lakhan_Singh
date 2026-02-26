@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.overvideo {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: aliceblue;
+    
+}
+
+.overvideo h3 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.overvideo h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.overvideo h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.b1, .b2 {
+    background: transparent;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.b1 img, .b2 img {
+    width: 180px;
+    border-radius: 8px;
+}
+
+.b1:hover, .b2:hover {
+    transform: scale(1.05);
+}
+
+.overvideo button[type="button"] {
+    margin-top: 30px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.overvideo button[type="button"]:hover {
+    background: #e23744;
+    border-color: #e23744;
+}
+
+/* Section */
+.food-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.content {
+    max-width: 700px;
+}
+
+.content h1 {
+    font-size: 48px;
+    color: #e23744;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+.food {
+    position: absolute;
+}
+.burger {
+    left: 11%;
+    top: 30%;
+    width: 200px;
+}
+
+.momos {
+    right: 10%;
+    top: 5%;
+    width: 220px;
+}
+
+.pizza {
+    right: 11%;
+    bottom: 25%;
+    width: 200px;
+    
+}
+
+.tomato1 {
+    left: 10%;
+    bottom: 30%;
+    width: 50px;
+}
+
+.tomato2 {
+    right: 5%;
+    top: 35%;
+    width: 50px;
+}
+
+.mint {
+    left: 30%;
+    top: 10%;
+    width: 40px;
+}
+
+/* Stats Card */
+.stats-card {
+    position: absolute;
+    bottom: 40px;
+    background: white;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 25px 15px 25px rgba(71, 40, 40, 0.08);
+}
+
+.stat h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.stat p {
+    margin: 5px 0 0;
+    color: #777;
+    font-size: 18px;
+}
+
+.divider {
+    width: 1px;
+    height: 50px;
+    background: #ddd;
+}
+.wait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 5%;
+  background: linear-gradient(135deg, #fff6f6, #ffeaea);
+  flex-wrap: wrap;
+}
+
+.content1 {
+  text-align: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.content1 h1 {
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #e33636;
+}
+
+.content1 p {
+  font-size: 30px;
+  color: #787575;
+}
+.wait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  padding: 100px 0;
+  background: #e8e2e2;
+}
+
+/* LEFT & RIGHT COLUMN */
+.left,
+.right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 in one row */
+  gap: 40px;
+}
+
+/* CARD DESIGN */
+.left div,
+.right div {
+  width: 200px;
+  padding: 35px 20px;
+  background: #f4f4f4;
+  border-radius: 28px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.left div:hover,
+.right div:hover {
+  transform: translateY(-8px);
+}
+
+/* CARD IMAGE */
+.left img,
+.right img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.left h4,
+.right h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* CENTER PHONE */
+.cen {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mob img {
+  width: 420px;
+}
+
+.mobc2 {
+  position: absolute;
+  background: #f4f4f4;
+  width: 240px;
+  padding: 35px 20px;
+  border-radius: 28px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.mobc2 img {
+  width: 90px;
+  margin-bottom: 15px;
+}

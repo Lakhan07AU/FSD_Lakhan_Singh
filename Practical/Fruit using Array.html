@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Fruits using Arrow Function</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #43cea2, #185a9d);
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            background: #ffffff;
+            padding: 30px;
+            width: 350px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #185a9d;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: #e8f6f3;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h1>Fruit List</h1>
+        <ul id="output"></ul>
+    </div>
+
+    <script>
+        let fruits = () => [
+            "Apple",
+            "Banana",
+            "Mango",
+            "Orange",
+            "Grapes",
+            "Pineapple",
+            "Papaya",
+            "Guava",
+            "Watermelon",
+            "Strawberry"
+        ];
+
+        let list = fruits();
+        let output = document.getElementById("output");
+
+        for (let i = 0; i < list.length; i++) {
+            output.innerHTML += "<li>" + list[i] + "</li>";
+        }
+    </script>
+
+</body>
+</html>

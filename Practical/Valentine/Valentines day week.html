@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Valentine Days </title>
+
+<style>
+     
+    .footer {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        color: #1b1b1b;
+        font-size: 14px;
+        opacity: 0.9;
+    }
+h1{
+    color :red ;
+    text-align: center;
+    text-decoration: double;
+    text-transform: capitalize;
+    margin-top: 55px ;
+    margin-right: auto;
+}
+body {
+          
+            background-image: url("./Valentine\ bg.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            font-family: Arial, sans-serif;
+            justify-content: center ;
+        }
+ 
+
+   #output {
+        text-align: center;
+        font-size: 30px;
+        color:  #ff3333;
+        font-weight: bold;
+        margin-top: 30px;
+    }      
+
+</style>
+</head>
+<body>
+<h1>Valentine Week</h1>
+<marquee behavior="alternate" direction="left" scrollamount="5" style="color: #ff3333; font-family: 'Courier New'; font-size: 24px; font-weight: bold;">
+    💝 Be Mine, Forever! 💝
+</marquee>
+<br>
+<br>
+<marquee behavior="scroll" direction="left"  scrollamount="10">
+    ❤️ 💖 🌹 💘 💌 ❤️ 💖 🌹 💘 💌
+</marquee>
+<br>
+<br>
+<marquee behavior="alternate" direction="right" scrollamount="5" style="color: #ff3333; font-family: 'Courier New'; font-size: 24px; font-weight: bold;">
+    💝 Be Mine, Forever! 💝
+</marquee>
+<br>
+<br>
+<marquee behavior="scroll" direction="right" scrollamount="10">
+    ❤️ 💖 🌹 💘 💌 ❤️ 💖 🌹 💘 💌
+</marquee> 
+
+<div id="output"></div>
+
+<script>
+    let week = Number(prompt("Enter your Number(7feb-14feb) :"));
+    result = "" ;
+    switch (week) {
+        case 7:
+            result = "Rose Day";
+            break;
+
+        case 8:
+            result = "Propose Day";
+            break;
+
+        case 9:
+           result = "Chocolate Day";
+            break;
+
+        case 10:
+            result = "Teddy Day";
+         
+            break;
+
+        case 11:
+           result = "Promise Day";
+            break;
+
+        case 12:
+            result = "Hug Day" ;
+            break;
+
+        case 13:
+            result = "Kiss Day";
+            break;
+
+        case 14:
+            result = "Valentine Day" ;
+            break;
+        default:
+            result = "not a Valentine week";
+    }
+    
+    document.getElementById("output").innerText = ("Today is " + result);
+
+</script>
+
+
+<div class="footer">
+    © 2026 | Designed with ❤️ for Valentine Days
+</div>
+
+</body>
+</html>
+

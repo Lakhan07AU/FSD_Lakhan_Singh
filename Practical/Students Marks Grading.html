@@ -1,0 +1,107 @@
+<html>
+<head>
+    <title>Student Marks grading system</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #2193b0, #6dd5ed);
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            width: 400px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #0b5ed7;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 2px solid #0b5ed7;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background: #0b5ed7;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #084298;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 17px;
+            text-align: left;
+        }
+
+        .not-found {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h1>Student Marks Grading System</h1>
+
+        <input type="text" id="regno" placeholder="Enter Registration Number (101-105)">
+        <br>
+        <button onclick="findStudent()">Search</button>
+        <div class="result" id="output"></div>
+    </div>
+
+    <script>
+        let students = [
+            { reg: "101", name: "Lakhan Singh", course: "BCA", semester: "IV" },
+            { reg: "102", name: "Raja ji", course: "BCA", semester: "III" },
+            { reg: "103", name: "Kanahiya ji", course: "BCA", semester: "II" },
+            { reg: "104", name: "Verma ji", course: "BCA", semester: "IV" },
+            { reg: "105", name: "Sharma ji", course: "BCA", semester: "IV" }
+        ];
+        function findStudent() {
+            let regInput = document.getElementById("regno").value;
+            let output = document.getElementById("output");
+            let found = false;
+
+            for (let i = 0; i < students.length; i++) {
+                if (students[i].reg === regInput) {
+                    output.innerHTML =
+                        "<b>Name:</b> " + students[i].name + "<br>" +
+                        "<b>Course:</b> " + students[i].course + "<br>" +
+                        "<b>Semester:</b> " + students[i].semester;
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                output.innerHTML = "<span class='not-found'>Student Not Found</span>";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+<html>
+<head>
+    <title>Company Details</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #1d2671, #c33764);
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .card h2 {
+            color: #c33764;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 16px;
+            margin: 6px 0;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Company Details</h1>
+
+    <div class="container" id="companies"></div>
+
+    <script>
+        let companies = [
+            {
+                name: "TechNova Pvt Ltd",
+                location: "Bangalore",
+                ceo: "Rahul Sharma",
+                employees: 250,
+                founded: 2018
+            },
+            {
+                name: "GreenSoft Solutions",
+                location: "Hyderabad",
+                ceo: "Ananya Rao",
+                employees: 180,
+                founded: 2016
+            },
+            {
+                name: "NextGen IT Services",
+                location: "Pune",
+                ceo: "Amit Verma",
+                employees: 320,
+                founded: 2015
+            },
+            {
+                name: "CloudSpark Technologies",
+                location: "Chennai",
+                ceo: "Suresh Kumar",
+                employees: 140,
+                founded: 2019
+            },
+            {
+                name: "CyberWave Systems",
+                location: "Noida",
+                ceo: "Neha Singh",
+                employees: 210,
+                founded: 2017
+            }
+        ];
+
+        let output = document.getElementById("companies");
+
+        for (let i = 0; i < companies.length; i++) {
+            output.innerHTML += `
+                <div class="card">
+                    <h2>${companies[i].name}</h2>
+                    <p><span>Location:</span> ${companies[i].location}</p>
+                    <p><span>CEO:</span> ${companies[i].ceo}</p>
+                    <p><span>Employees:</span> ${companies[i].employees}</p>
+                    <p><span>Founded:</span> ${companies[i].founded}</p>
+                </div>
+            `;
+        }
+    </script>
+
+</body>
+</html>
+

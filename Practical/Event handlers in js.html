@@ -1,0 +1,102 @@
+<html>
+<head>
+    <title>Event Handlers in JS</title> 
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: url("./pic.jpg") no-repeat center center / cover;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.3); 
+            backdrop-filter: blur(12px);
+            padding: 30px;
+            width: 380px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+            color: #000;
+        }
+
+        h1 {
+            color: #003566;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #003566;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #001d3d;
+        }
+
+        #result {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #000; 
+        }
+
+        .pic img {
+            width: 100px;
+            margin-bottom: 15px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Event Handlers in JS</h1>
+
+        <label>Username:</label><br>
+        <input type="text" id="username" placeholder="Enter your Username"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" id="password" placeholder="Enter your password"><br><br>
+
+        <button onclick="login()">Login</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "raghav" && password === "123") {
+                document.getElementById("result").style.color = "green";
+                document.getElementById("result").innerHTML = "Login Successfully!!";
+            } else {
+                document.getElementById("result").style.color = "red";
+                document.getElementById("result").innerHTML = "Login Failed";
+            }
+        }
+    </script>
+</body>
+</html>

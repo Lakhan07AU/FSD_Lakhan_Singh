@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>city Hospital</title>
+    <link rel="stylesheet" href="hospital.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><h3>City Hospital</h3></div>
+        <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Gallary</li>
+        <li>Contact</li>
+        </ul>
+    </div> 
+    <div class="hero">
+        <h2 class="heroh2">We Care for your Health</h2>
+        <p>24\7 Emeregency & Quality Treatement</p>
+        <button class="Book" onclick="Appointment()">Book Appointment</button>
+        <p id="result"></p>
+        <script>
+        function Appointment(){
+        document.getElementById("result").innerHTML =
+        "Appointment booked successfully!";
+        }
+        </script>
+    </div>  
+
+    <div class="services">
+        <h2 class="h2s">Our Services</h2>
+        <button>Emeregency</button>
+        <button>Surgery</button>
+        <button>Pharmacy</button>
+     <div class="gallary">
+        <img src="./doc.png" alt="1" height="250px"  >
+        <img src="./doc.png" alt="2" height="250px">
+        <img src="./doc.png" alt="3" height="250px">
+     </div>   
+     <div class ="contact">
+        <h2 class="h2s2">Contact Us</h2>
+        <input type="text" id="name" placeholder="Your Name" , required>
+        <input type="text" placeholder="Email"  , required>
+        <input type="text" placeholder="Message" , required>
+        <button class="message" onclick="Message()">Sent Message</button>
+    <script>
+    function Message(){
+    var name = document.getElementById("name").value;
+
+    if(name === ""){
+        alert("Please enter your name");
+    } else {
+        alert("Thank you " + name + "! We will contact you soon.");
+    }
+    }
+    </script>
+     </div>
+    </div>
+    <div class="footer">
+        <p> © 2026 | City Hospital Emeregency by Student</p>
+    </div>
+</body>
+</html>

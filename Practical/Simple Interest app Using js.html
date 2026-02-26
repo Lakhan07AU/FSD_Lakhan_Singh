@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Simple Interest App</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            width: 380px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #003566;
+            margin-bottom: 20px;
+        }
+
+        .result {
+            font-size: 18px;
+            color: #333;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Simple Interest</h1>
+
+        <div class="result">
+            <script>
+                let p_amt = Number(prompt("Enter Principal"))
+                let time = Number(prompt("Enter Time"))
+                let rate = Number(prompt("Enter Rate"))
+                let S_interest = p_amt * time *rate/100;
+                document.write("principal amt is :" + p_amt + "<br>");
+                document.write("time is :" + time + "<br>");
+                document.write("rate is:" + rate + "<br>");
+                document.write(" Simple Interest is :" + S_interest);
+            </script>
+        </div>
+    </div>
+
+</body>
+</html>

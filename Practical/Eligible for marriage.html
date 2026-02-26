@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Eligibility of Marriage</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            width: 350px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #c9184a;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Eligibility for Marriage</h1>
+
+        <script>
+            let numb = Number(prompt("Enter your Age :"))
+            if (50 <= numb >= 21) { 
+                document.write("You are Eligible ");
+            }
+            else if(numb>=60){
+                document.write("Oppss! you are too Old <br> Not Eligible");
+            }
+            else
+                document.write("Not Eligible");
+        </script>
+    </div>
+
+</body>    
+</html>
