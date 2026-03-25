@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: black;
+}
+
+/* 4D Background */
+.bg {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, #667eea, #764ba2, #000);
+  animation: moveBg 15s infinite linear;
+  z-index: -1;
+}
+
+@keyframes moveBg {
+  0% { transform: translate(0,0) rotate(0deg); }
+  50% { transform: translate(-25%, -25%) rotate(180deg); }
+  100% { transform: translate(0,0) rotate(360deg); }
+}
+
+/* Glass UI */
+.container {
+  position: relative;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #667eea;
+}
+
+ul {
+  list-style: none;
+  margin-top: 15px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+li {
+  background: rgba(255,255,255,0.2);
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  background: red;
+  padding: 5px 10px;
+  width: auto;
+}
